@@ -42,15 +42,12 @@ h3 {
     cursor: pointer;
     z-index: 0;
     cursor: pointer;
+    width: 1em;
+    transition: 5s;
 }
 
 #subir:hover {
-    color: green;
-    transition: 1s;
-}
-
-#subir:not(:focus){
-    transition: 1s;
+    transform: rotate(360deg);
 }
 
 /* header / nav */
@@ -61,6 +58,10 @@ h3 {
     transition: 1s;
 }
 
+.container #home {
+    height: 12em;
+}
+
 .nav-item:not(:focus){
     transition: 2s;
 }
@@ -68,7 +69,23 @@ h3 {
 #logoInjetaq {
     padding: 0rem 1rem;
     width: 176px;
-    height: 132px;
+    height: 136px;
+    cursor: pointer;
+}
+
+#globe {
+    color: aliceblue;
+}
+
+#dropdownMenuButton1{
+    background-color: transparent;
+    border: none;
+    transition: 1s;
+}
+
+#dropdownMenuButton1:hover{
+    background-color: #0b76da;
+    color: white;
 }
 
 .linha{
@@ -89,29 +106,30 @@ h3 {
     background-color: transparent;
     box-shadow: none;
     border-radius: 5em;
+    transition: 1s;
 }
 
 .btn-img:hover {
     background-color: transparent;
     border: solid 1px rgb(233, 233, 236);
-    transition: 1s;
-}
-
-.btn-img:not(:focus){
-    transition: 1s;
 }
 
 .itens {
     min-height: 2rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-end;
     padding-right: 4.5%;
     margin-left: 9.5%;
+    height: 100%;
 }
 
 main {
     padding: 0% 1%;
+}
+
+.btn_complaince{
+    padding-left: 0;
 }
 
 /* Sobre */
@@ -321,21 +339,25 @@ h4 {
 .images {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 600;
     font-size: 0.8rem;
     margin: 1% 0%;
+    
+}
+
+.fotos {
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+    transition: 2s;
 }
 
 .fotos:hover{
     filter: grayscale(1);
     border-radius: 2rem;
-    transition: 2s;
-}
-
-.fotos:not(:focus){
-    transition: 2s;
 }
 
 .texto {
@@ -370,10 +392,7 @@ h4 {
     margin: 1rem 0rem;
 }
 
-.fotos {
-    text-align: center;
-    color: blue;
-}
+
 
 .texto-img {
     height: 2rem;
@@ -422,18 +441,26 @@ footer {
 .rodape {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
     padding: 1rem;
+    font-size: medium;
+}
+
+.rodape p {
+    margin: 0;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .f-documentos {
     padding: 0.5rem;
     text-decoration: none;
+    transition: 1s;
 }
 
 .f-documentos:hover {
@@ -441,12 +468,9 @@ footer {
     color: white;
     border-radius: 2rem;
     text-decoration: underline;
-    transition: 1s;
+    
 }
 
-.f-documentos:not(:focus){
-    transition: 1s;
-}
 
 address {
     display: flex;
@@ -517,6 +541,9 @@ address {
         top: 90%;
     }
 
+    .rodape {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1023px){
@@ -685,6 +712,10 @@ address {
         height: 2rem;
     }
 
+    .div_politica_privacidade{
+        padding-left: 0;
+    }
+
     .texto-setores {
         text-align: justify; 
     }
@@ -812,6 +843,7 @@ address {
     #link-politica-privacidade {
         margin: 0;
         height: 2rem;
+        padding-left: 0 ;
     }
 
     .texto-setores {
@@ -861,5 +893,4 @@ address {
         flex-direction: column;
         justify-content: center;
     }
-
 }

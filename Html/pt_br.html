@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- bootstrap -->
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+
+		<!-- bootstrap local -->
+		<link rel="stylesheet" href="../bootstrap//css/bootstrap.css" />
+		<!-- <script defer src="../bootstrap//js/bootstrap.min.js"></script> -->
+		<script defer src="../bootstrap//js/bootstrap.bundle.min.js"></script>
+		<!-- <script defer src="../bootstrap//js/bootstrap.js"></script> -->
+		<!-- <script defer src="../bootstrap//js/bootstrap.esm.js"></script> -->
+		<!-- <script defer src="../bootstrap//js/bootstrap.esm.min.js"></script> -->
+
+		<!-- icone do grupo taq no tilte -->
+		<link rel="shortcut icon" href="../Images/iconeGrupoTaq.ico" />
+		<title>Injetaq</title>
+
+		<!-- css -->
+		<link href="../CSS/styles.css" rel="stylesheet" />
+
+		<!-- javascript -->
+		<script
+			defer
+			src="../JavaScript/modelacao/equipamentos.modelacao.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/ferramentaria/equipamentos.ferramentaria.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/controleDimensional/equipamentos.controleDimensional.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/injecaoPlasticos/equipamentos.injecaoPlasticos.js"
+		></script>
+
+		<!-- cookies -->
+		<script defer src="../JavaScript/cookies.js"></script>
+	</head>
+	<body>
+		<!-- <a href="#home"><i class="bi bi-arrow-up-circle-fill" id="subir" title="Topo da página"></i></a> -->
+		<a href="#home"
+			><img
+				src="../Images/arrow-up-circle.svg"
+				alt="Logo topo da pagina"
+				id="subir"
+				title="Ir para o inicio"
+		/></a>
+		<!-- cabeçalho -->
+		<header class="container" id="home">
+			<div class="row row-header">
+				<nav class="navbar navbar-expand-md navbar-light nav">
+					<!-- logo injetaq -->
+					<div class="col-md-2" id="logoInjetaq">
+						<img
+							src="../Images/LOGO_INJETAQ.jpg"
+							alt="logo-injetaq"
+							class="img-fluid"
+							title="Injetaq Indústria e Comércio Ltda"
+						/>
+					</div>
+					<div class="col-md-10 itens" id="hamburger">
+						<div class="itens-ul">
+							<button
+								class="navbar-toggler overflow-auto"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="#a-injetaq">A Injetaq</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link"
+											href="#"
+											data-bs-toggle="modal"
+											data-bs-target="#clientes-injetaq"
+											>Clientes</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link"
+											href="#"
+											data-bs-toggle="modal"
+											data-bs-target="#contato-injetaq"
+											>Fale conosco</a
+										>
+									</li>
+								</ul>
+								<div class="dropdown language">
+									<button
+										class="btn btn-primary dropdown-toggle language"
+										type="button"
+										id="dropdownMenuButton1"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<img
+											src="../Images/globe2.svg"
+											class="globe"
+											alt="logo linguagem"
+											title="Linguagem"
+										/>
+									</button>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton1"
+									>
+										<li>
+											<a class="dropdown-item" href="./en_en.html">Inglês</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./pt_br.html">Português</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="linha">
+				<hr class="linhaTopo" />
+			</div>
+		</header>
+
+		<!-- carrossel -->
+		<main class="container">
+			<!-- <div class="row">
+          <div class="col-md-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner carossel">
+                <div class="carousel-item active">
+                  <img src="../Images/ADestaq_00.jpg" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Images/ADestaq_01.jpg" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Images/ADestaq_02B.jpg" class="d-block w-100 img" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev btn-img" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next btn-img" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div> -->
+			<!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../Images/ADestaq_00.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../Images/ADestaq_01.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../Images/ADestaq_02B.jpg" class="d-block w-100 img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+		</main>
+		<!-- sobre -->
+		<section class="container" id="sobre">
+			<div class="row mt-2">
+				<div class="col-lg-3 foto-injetaq">
+					<img
+						src="../Images/OGrupoTaq_01.jpg"
+						alt="predio injetaq"
+						title="A Injetaq tem sede própria com 8.000 m2 de área construída, localizado em terreno de 17.000m2, em Diadema/SP"
+						id="img-injetaq"
+					/>
+					<div class="legendas">
+						<span
+							>A Injetaq tem sede própria com 8.000m<sup>2</sup> de área
+							construída,</span
+						>
+						<span
+							>localizado em terreno de 17.000m<sup>2</sup>, em
+							Diadema/SP.</span
+						>
+					</div>
+				</div>
+				<div class="col-lg-9 dados-injetaq">
+					<p class="inj">
+						A Injetaq pode fornecer serviços individualmente, como também um
+						completo processo de produção, que vai do desenvolvimento de plano
+						de metódos, projetos, confecção de modelos de isopor, confecção de
+						estampos e dispositivos, com controle de qualidade de padrão
+						internacional.
+					</p>
+					<p class="inj">
+						Presta serviços para indústrias automobilísticas, eletrodomésticos e
+						brinquedos, entre outras. Com equipamentos e mão de obra altamente
+						especializada, a empresa está apta a prestar serviços nas áreas de
+						projeto e desenvolvimento, modelação, ferramentaria, controle
+						dimensional e injeção de plásticos, bem como, confecção de peças
+						protótipos experimentais confeccionadas em chapa ou plástico.<br />
+					</p>
+					<p class="inj" title="Clique para baixar o perfil.">
+						Baixe o
+						<a href="../documents/perfil_injetaq_portugues.pdf" target="_blank">
+							perfil da Injetaq
+						</a>
+						e conheça um pouco melhor os nossos produtos e serviços.
+					</p>
+					<p class="inj">
+						A Injetaq, é certificada na norma
+						<a
+							href="../documents/certificado_iso.pdf"
+							target="_blank"
+							title="Clique para baixar o certificado."
+							>NBR ISO 9001:2015</a
+						>.
+					</p>
+					<p class="inj">A nossa política da qualidade é:</p>
+					<h5
+						class="politica-qualidade"
+						title="Politica da Qualidade: SATISFAZER TODAS AS EXPECTATIVAS DE NOSSOS CLIENTES"
+					>
+						"SATISFAZER TODAS AS EXPECTATIVAS DE NOSSOS CLIENTES"
+					</h5>
+					<p class="descricao" title="OBJETIVOS DA QUALIDADE">
+						Para isso se compromete em:
+					</p>
+					<ul class="lista_objetivos">
+						<li>Ser reconhecido como fornecedor de alta qualidade;</li>
+						<li>
+							Melhorar continuamente os produtos, processos e sistema de gestão
+							da qualidade a medida que o mercado for exigindo;
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mb-3" id="compliance">
+				<div class="col-md-12">
+					<h4>COMPLIANCE</h4>
+					<p class="text-compliance mb-0">
+						A Injetaq tem a missão de fazer diferente, de envolver a Direção e
+						as pessoas para agregarem valor ao negócio; para que adotem práticas
+						que visem a melhoria e a competitividade da empresa; que não
+						permitam práticas ilegais e antiéticas; que evitem o risco da
+						organização herdar um passivo ambiental; que tenham a preocupação
+						constante para a melhoria da produtividade e a satisfação dos
+						funcionários, clientes, incluindo a saúde e segurança; que tenha
+						lucro e perenidade no mercado. Em relação a qualidade nossa missão
+						é: “Confeccionar e comercializar desenhos e projetos mecânicos;
+						construção de ferramental para estamparia; dispositivos em geral;
+						moldes e modelos para fundição e injeção de termoplásticos.”
+					</p>
+					<p
+						class="text-compliance mt-0"
+						title="Clique para baixar o código de conduta."
+					>
+						Clique
+						<a href="../documents/codigo_de_conduta.pdf" target="_blank"
+							>aqui</a
+						>
+						para fazer o download do código de conduta
+					</p>
+					<div class="row">
+						<div class="col-md-1 btn_complaince">
+							<form
+								action="https://docs.google.com/forms/d/e/1FAIpQLSdQrv59hjNt8KzEZtQkkX7tDJrcFunOr44SZzDbz66lPQNVJg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"
+								method="get"
+								target="_blank"
+							>
+								<button class="btn btn-primary mb-2" id="btn-denuncia">
+									Registrar denuncia
+								</button>
+							</form>
+							<!-- <a clas href="https://docs.google.com/forms/d/e/1FAIpQLSdQrv59hjNt8KzEZtQkkX7tDJrcFunOr44SZzDbz66lPQNVJg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link" target="_blank" id="link_denuncia">Registrar denuncia</a> -->
+						</div>
+						<div class="col-md-3 div_politica_privacidade">
+							<!-- Button trigger politica de privacidade -->
+							<div id="link-politica-privacidade">
+								<a
+									href="#"
+									data-bs-toggle="modal"
+									data-bs-target="#politica-privacidade-modal"
+									>Politica de privacidade</a
+								>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="politica-privacidade-modal"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Politica de privacidade
+										</h5>
+									</div>
+									<div class="modal-body aviso">
+										<h5 class="text-center text-primary">
+											AVISO DE PRIVACIDADE DOS DENUNCIANTES
+										</h5>
+										<p class="politica-privacidade">
+											A INJETAQ INDÚSTRIA E COMÉRCIO LTDA., se compromete a
+											guardar sigilo absoluto e proteger sua privacidade nos
+											termos da legislação de proteção de dados pessoais, em
+											particular, a Lei nº 13.709/2018 (“LGPD”). Seus dados
+											pessoais serão tratados:
+										</p>
+										<ol type="a">
+											<li>de maneira legal, leal e transparente;</li>
+											<li>
+												sujeitando-os aos fins explícitos e legítimos
+												específicos;
+											</li>
+											<li>
+												de forma adequada e limitada ao cumprimento das
+												finalidades a que se propõe, nos termos dos artigos 7º e
+												11 e 3;
+											</li>
+											<li>
+												nos prazos conforme os artigos 15 e 16, todos da Lei nº
+												13.709/2018, ou pelo prazo necessário para cumprir os
+												objetivos do tratamento.
+											</li>
+										</ol>
+										<p class="politica-privacidade mt-0">
+											Os dados pessoais utilizados serão sempre exatos e
+											atualizados, nos comprometendo a não utilizá-los sem a
+											expressa autorização de seu titular, conservando-os de
+											maneira segura, conforme determina o artigo 46, da Lei nº
+											13.709/2018. O Canal de Denúncia é um canal que a Injetaq
+											Indústria e Comércio Ltda., disponibiliza para a
+											comunicação de qualquer conduta que envolva a prática de
+											qualquer irregularidade, ou ato praticado contrário à
+											Ética e a concorrência leal. Seus dados pessoais serão
+											tratados para as seguintes finalidades:
+										</p>
+										<ol type="A">
+											<li>Gestão de denúncias; e</li>
+											<li>Apurações das denúncias.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn btn-primary"
+											data-bs-dismiss="modal"
+										>
+											OK
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- a injetaq -->
+		<section id="a-injetaq">
+			<div class="container">
+				<div class="row">
+					<h2 class="process-injetaq mt-0">A INJETAQ</h2>
+					<div class="accordion" id="injetaq">
+						<!-- PROJETO E DESENVOLVIMENTO -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="proj">
+								<button
+									class="accordion-button collapsed btn btn_a_injetaq"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#projeto"
+									aria-expanded="false"
+									aria-controls="projeto"
+									id="projeto_position"
+								>
+									PROJETO E DESENVOLVIMENTO
+								</button>
+							</h2>
+							<div
+								id="projeto"
+								class="accordion-collapse collapse"
+								aria-labelledby="proj"
+								data-bs-parent="#injetaq"
+							>
+								<div class="accordion-body">
+									<p class="texto-setores">
+										Com equipamentos e mão-de-obra altamente especializada
+										presta serviços para indústrias automobilísticas e de
+										autopeças, atuando nas áreas de projetos de produtos,
+										ferramentas de corte, dobra e repuxo, moldes de injeção,
+										dispositivos de montagem, dispositivos de usinagem, e
+										dispositivos de controle
+									</p>
+									<div class="row row-prod-serv">
+										<div class="col-md-4">
+											<h5 class="texto-titulo">SERVIÇOS</h5>
+											<ul>
+												<li class="texto">
+													Desenvolvimento de processos e plano de métodos
+												</li>
+												<li class="texto">
+													Simulação de repuxo e retorno elástico (spring back)
+												</li>
+												<li class="texto">Desenvolvimento de ferramental</li>
+												<li class="texto">Projetos de ferramentas</li>
+												<li class="texto">
+													Projetos de dispositivos e máquinas especiais
+												</li>
+												<li class="texto">Modelamento</li>
+												<li class="texto">Programas de usinagem</li>
+												<li class="texto">Projetos de moldes de injeção</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+											<h5 class="texto-titulo">SOFTWARES</h5>
+											<h6 class="texto-subtitulo">PROJETO E DESENVOLVIMENTO</h6>
+											<ul>
+												<li class="texto">Catia V5 2014 até 2021</li>
+												<li class="texto">Unigraphics NX 9 até NX 12</li>
+											</ul>
+											<h6 class="texto-subtitulo">VISUALIZADOR DE PROJETOS</h6>
+											<ul>
+												<li class="texto">PartXplore 2021</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+											<h5 class="texto-titulo">PROGRAMAÇÃO CNC</h5>
+											<ul>
+												<li class="texto">Work NC 2020.0.1935<br /></li>
+												<li class="texto">NC Mach3</li>
+											</ul>
+											<h6 class="texto-subtitulo">
+												SOFTWARE DE SIMULAÇÃO PARA PEÇAS ESTAMPADAS
+											</h6>
+											<ul>
+												<li class="texto">Autoform R7 e R8</li>
+											</ul>
+										</div>
+									</div>
+									<h3 class="fotos">Fotos</h3>
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_proj"
+												src="../Images/ADestaq_00.jpg"
+												alt="Prédio da administração e projeto Injetaq"
+												title="Prédio da administração e projeto: 1.400m2"
+											/>
+											<span class="texto-img"
+												>Prédio da administração e projeto: 1.400m<sup
+													>2</sup
+												></span
+											>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_proj"
+												src="../Images/ADestaq_01.jpg"
+												alt="Área da administração Injetaq"
+												title="Área da administração"
+											/>
+											<span class="texto-img">Área da administração</span>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_proj"
+												src="../Images/ADestaq_03.jpg"
+												alt="Projeto de ferramentas Injetaq"
+												title="Projeto de ferramentas"
+											/>
+											<span class="texto-img">Projeto de ferramentas</span>
+										</div>
+
+										<!-- <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/ADestaq_02B.jpg" alt="Área Projeto Injetaq" title="Área de Projetos">
+                      <span class="texto-img">Área de Projetos</span>        
+                    </div>                -->
+									</div>
+
+									<div class="row">
+										<!-- <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/ADestaq_02.jpg" alt="Área de Projetos Injetaq" title="Área de Projetos">
+                      <span class="texto-img">Área de Projetos</span>
+                    </div>
+  
+                    <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/ADestaq_05_DISPOSITIVOS.jpg" alt="Projeto de dispositivos Injetaq" title="Projeto de dispositivos">
+                      <span class="texto-img">Projeto de dispositivos</span>
+                    </div>
+              
+                    <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/Modelo_Visual_11.png" alt="Modelo visual Injetaq" title="Modelo visual">
+                      <span class="texto-img">Modelo visual</span>               
+                    </div>  -->
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_proj"
+												src="../Images/ADestaq_06_MAQUINAS_ESPECIAIS.jpg"
+												alt="Projeto de máquinas especiais Injetaq"
+												title="Projeto de máquinas especiais"
+											/>
+											<span class="texto-img"
+												>Projeto de máquinas especiais</span
+											>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_proj"
+												src="../Images/maq_mod_011.png"
+												alt="Projeto de máquinas especiais Injetaq"
+												title="Projeto de máquinas especiais"
+											/>
+											<span class="texto-img"
+												>Projeto de máquinas especiais</span
+											>
+										</div>
+										<!-- <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/Modelo_Visual_22.png" alt="Modelo visual Injetaq" title="Modelo visual">
+                      <span class="texto-img">Modelo visual</span>
+                    </div> -->
+									</div>
+									<div class="row">
+										<!-- <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/ADestaq_041_DISPOSITIVOS.jpg" alt="Projeto de dispositivos Injetaq" title="Projeto de dispositivos">
+                      <span class="texto-img">Projeto de dispositivos</span>
+                    </div> -->
+
+										<!-- <div class="col-lg-4 images">
+                      <img class="fotos fotos_proj" src="../Images/maq_mod_022.png" alt="Projeto de dispositivos Injetaq" title="Projeto de dispositivos">
+                      <span class="texto-img">Projeto de dispositivos</span>
+                    </div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- MODELAÇÃO -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="mod">
+								<button
+									class="accordion-button collapsed btn equipamentos-mod-modal btn_a_injetaq"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#modelacao"
+									aria-expanded="false"
+									aria-controls="modelacao"
+									id="mod-equipamento"
+								>
+									MODELAÇÃO
+								</button>
+							</h2>
+							<div
+								id="modelacao"
+								class="accordion-collapse collapse"
+								aria-labelledby="mod"
+								data-bs-parent="#injetaq"
+							>
+								<div class="accordion-body">
+									<p class="texto-setores">
+										Modelação a serviço das indústrias automobilísticas,
+										autopeças, entre outras.
+									</p>
+									<p class="texto-setores">
+										O setor de modelação da Injetaq dispõe de uma área de
+										1.000m<sup>2</sup> e executa modelos em styropor (isopor) e
+										resina para ferramentas e dispositivos.
+									</p>
+									<div class="two-col-model">
+										<div class="row row-prod-serv">
+											<div class="col-md-6">
+												<h5 class="texto-titulo">SERVIÇOS & PRODUTOS</h5>
+												<ul>
+													<li class="texto">
+														Modelos em styropor (isopor) e resina
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-6 table-responsive">
+												<h5 class="texto-titulo">ESTRUTURA E EQUIPAMENTOS</h5>
+												<table
+													class="table table-striped table-hover table-modelacao"
+												>
+													<thead>
+														<tr>
+															<th scope="col">Qtde</th>
+															<th scope="col">Equipamento</th>
+															<th scope="col">Dimensões/Capacidade</th>
+														</tr>
+													</thead>
+													<tbody id="equip-mod">
+														<!-- javascript -->
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<h3 class="fotos">Fotos</h3>
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_mod"
+												src="../Images/AInjetaq_MODELACAO_01.jpg"
+												alt="Área modelação Injetaq"
+												title="Modelação: Área fabril - 1.000m2"
+											/>
+											<span class="texto-img"
+												>Modelação: Área fabril - 1.000m<sup>2</sup></span
+											>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_mod"
+												src="../Images/AInjetaq_MODELACAO_04.jpg"
+												alt="Máquinas CNC modelação Injetaq"
+												title="Copiadoras CNC - X = 2,50m Y = 5,10m Z = 1,10m"
+											/>
+											<span class="texto-img"
+												>Copiadoras CNC - X = 2,50m Y = 5,10m Z = 1,10m</span
+											>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_mod"
+												src="../Images/Maquina_Modelacao31.png"
+												alt="Maquina CNC modelação Injetaq"
+												title="Copiadoras CNC X = 2,50m Y = 5,10m Z = 1,10m"
+											/>
+											<span class="texto-img"
+												>Copiadoras CNC X = 2,50m Y = 5,10m Z = 1,10m</span
+											>
+										</div>
+									</div>
+									<!-- <div class="row">
+                      <div class="col-lg-4 images">
+                        <img class="fotos fotos_mod" src="../Images/modelo_11.png" alt="Modelo de isopor Injetaq" title="Modelos de Styropor (isopor)">
+                        <span class="texto-img">Modelos de Styropor (isopor)</span> 
+                      </div>
+                      <div class="col-lg-4 images">
+                        <img class="fotos fotos_mod" src="../Images/modelo_11.png" alt="Modelo de isopor Injetaq" title="Modelos de Styropor (isopor)">
+                        <span class="texto-img">Modelos de Styropor (isopor)</span> 
+                      </div>
+                      <div class="col-lg-4 images">
+                        <img class="fotos fotos_mod" src="../Images/modelo_21.png" alt="Modelo de isopor Injetaq" title="Modelos de Styropor (isopor)">
+                        <span class="texto-img">Modelos de Styropor (isopor)</span>
+                      </div>
+                    </div>  -->
+								</div>
+							</div>
+						</div>
+						<!-- FERRAMENTARIA -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="ferr">
+								<button
+									class="accordion-button collapsed btn btn_a_injetaq"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#ferramentaria"
+									aria-expanded="false"
+									aria-controls="ferramentaria"
+								>
+									FERRAMENTARIA
+								</button>
+							</h2>
+							<div
+								id="ferramentaria"
+								class="accordion-collapse collapse"
+								aria-labelledby="ferr"
+								data-bs-parent="#injetaq"
+							>
+								<div class="accordion-body">
+									<p>Fabricação de ferramental e dispositivos.</p>
+									<div class="col-md-12">
+										<h5 class="texto-titulo">SERVIÇOS & PRODUTOS</h5>
+										<ul>
+											<li class="texto">
+												Ferramentas de peças estampadas (repuxar, recortar,
+												flangear, puncionar)
+											</li>
+											<li class="texto">Dispositivos de inspeção e montagem</li>
+											<li class="texto">
+												Chapelonas e peças experimentais em chapas de aço e
+												plástico
+											</li>
+											<li class="texto">
+												Moldes para injeção de peças plásticas
+											</li>
+										</ul>
+									</div>
+									<h5 class="texto-titulo">ESTRUTURA E EQUIPAMENTOS</h5>
+									<ul>
+										<li class="texto">
+											O setor de ferramentaria da Injetaq, conta com ampla
+											fábrica (4.000m<sup>2</sup>), equipamentos e mão de obra
+											altamente especializada, que garantem a entrega com
+											qualidade e pontualidade.
+										</li>
+									</ul>
+									<div>
+										<p>
+											<button
+												class="btn btn-primary"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseExample"
+												aria-expanded="false"
+												aria-controls="collapseExample"
+												id="ferr-equipamento"
+											>
+												Equipamentos
+											</button>
+										</p>
+										<div class="collapse" id="collapseExample">
+											<div class="card card-body">
+												<table
+													class="table table-striped table-hover table-ferramentaria"
+												>
+													<thead>
+														<tr>
+															<th scope="col">Qtde</th>
+															<th scope="col">Equipamento</th>
+															<th scope="col">Dimensões (mm)</th>
+														</tr>
+													</thead>
+													<tbody id="equip-ferr">
+														<!-- javascript -->
+													</tbody>
+												</table>
+												<span class="texto texto-setores"
+													>* Controle de qualidade contendo: Desempenos,
+													micrômetros, paquímetros, traçadores, imicros, entre
+													outros.</span
+												>
+											</div>
+										</div>
+									</div>
+									<h3 class="fotos">Fotos</h3>
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_02.jpg"
+												alt="Area ferramentaria Injetaq"
+												title="Ferramentaria: Área fabril - 4.000m2"
+											/>
+											<span class="texto-img"
+												>Ferramentaria: Área fabril - 4.000m<sup>2</sup></span
+											>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_10.jpg"
+												alt="Area ferramentaria Injetaq"
+												title="Área da ferramentaria"
+											/>
+											<span class="texto-img">Área da ferramentaria</span>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/Copiadora%20W635%20%E2%80%93%20HARTFORD.png"
+												alt="Maquina CNC ferramentaria Injetaq"
+												title="Copiadora W635 – HARTFORD"
+											/>
+											<span class="texto-img">Copiadora W635 – HARTFORD</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/Copiadora%20HSA323EA%20%E2%80%93%20HARTFORD.png"
+												alt="Maquina CNC ferramentaria Injetaq"
+												title="Copiadora HSA323EA – HARTFORD"
+											/>
+											<span class="texto-img"
+												>Copiadora HSA323EA – HARTFORD</span
+											>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_05.jpg"
+												alt="Maquina CNC ferramentaria Injetaq"
+												title="Copiadora ZAYER KF 3000"
+											/>
+											<span class="texto-img">Copiadora ZAYER KF 3000</span>
+										</div>
+
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_09.jpg"
+												alt="Fresas ferramentaria Injetaq"
+												title="Fresas"
+											/>
+											<span class="texto-img">Fresas</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_11.jpg"
+												alt="Maquinas especiais Injetaq"
+												title="Prensas hidráulicas: Innocentini Blanch (1250 / 750 TON) Muller (630 TON)"
+											/>
+											<span class="texto-img"
+												>Prensas hidráulicas: Innocentini Blanch (1250 / 750
+												TON) Muller (630 TON)<br
+											/></span>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_18_MAQUINAS_ESPECIAIS.jpg"
+												alt="Maquinas especiais"
+												title="Construção de máquinas especiais"
+											/>
+											<span class="texto-img"
+												>Construção de máquinas especiais</span
+											>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/maq_hartford_011.png"
+												alt="Máquina CNC ferramentaria Injetaq"
+												title="Copiadora CNC PRO-2150 – HARTFORD"
+											/>
+											<span class="texto-img"
+												>Copiadora CNC PRO-2150 – HARTFORD</span
+											>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_06.jpg"
+												alt="Máquina CNC ferramentaria Injetaq"
+												title="Copiadora ZAYER KF 3000"
+											/>
+											<span class="texto-img">Copiadora ZAYER KF 3000</span>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_08.jpg"
+												alt="Torno Injetaq"
+												title="Torno"
+											/>
+											<span class="texto-img">Torno</span>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_11B.jpg"
+												alt="Prensas Injetaq"
+												title="Prensas hidráulicas JONASA (500 TON)"
+											/>
+											<span class="texto-img"
+												>Prensas hidráulicas JONASA (500 TON)</span
+											>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_13.jpg"
+												alt="Máquina CNC ferramentaria Injetaq"
+												title="Copiadora CNC LX 3220 – Leaderway"
+											/>
+											<span class="texto-img"
+												>Copiadora CNC LX 3220 – Leaderway</span
+											>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_07.jpg"
+												alt="Maquina CNC ferramentaria Injetaq"
+												title="Copiadoras FADAL Mod. 4020 e 4025"
+											/>
+											<span class="texto-img"
+												>Copiadoras FADAL Mod. 4020 e 4025</span
+											>
+										</div>
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/maq_mandrilhadora_011.png"
+												alt="Mandrilhadora injetaq"
+												title="Mandrilhadora – HBN-110 (Mesa giratoria)"
+											/>
+											<span class="texto-img"
+												>Mandrilhadora – HBN-110 (Mesa giratoria)</span
+											>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-4 images">
+											<img
+												class="fotos fotos_ferr"
+												src="../Images/AInjetaq_FERRAMENTA_17_MAQUINAS_ESPECIAIS.jpg"
+												alt="Maquinas especiais"
+												title="Construção de máquinas especiais"
+											/>
+											<span class="texto-img"
+												>Construção de máquinas especiais</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- CONTROLE DIMENSIONAL -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="ctrl-dim">
+								<button
+									class="accordion-button collapsed btn btn_a_injetaq"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#controle-dimensional"
+									aria-expanded="false"
+									aria-controls="controle-dimensional"
+									id="ctrl-equipamento"
+								>
+									CONTROLE DIMENSIONAL
+								</button>
+							</h2>
+							<div
+								id="controle-dimensional"
+								class="accordion-collapse collapse"
+								aria-labelledby="ctrl-dim"
+								data-bs-parent="#injetaq"
+							>
+								<div class="accordion-body">
+									<p class="texto-setores">
+										Área de medição tridimensional em peças industriais.
+									</p>
+									<p class="texto-setores">
+										Presta serviços de medição e controle dimensional em peças
+										de todos os setores industriais, com equipamentos altamente
+										sofisticados permitindo alta tecnologia na área de medição.
+									</p>
+									<div class="three-col-ctrl">
+										<div class="row row-prod-serv">
+											<div class="col-md-4">
+												<h5 class="texto-titulo">CONTROLE DE QUALIDADE</h5>
+												<ul>
+													<li class="texto">
+														Medição e controle dimensional em peças de todos os
+														setores industriais.
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3">
+												<h5 class="texto-titulo">SOFTWARES INSTALADOS</h5>
+												<ul>
+													<li class="texto">Poliworks 2019 IR4</li>
+												</ul>
+											</div>
+											<div class="col-md-5">
+												<h5 class="texto-titulo">ESTRUTURA E EQUIPAMENTOS</h5>
+												<ul>
+													<li class="texto">
+														Com area fabril de 1.050m<sup>2</sup>, a Injetaq
+														dispõe dos seguintes equipamentos:
+													</li>
+												</ul>
+												<table
+													class="table table-striped table-hover table-controle-dimensional"
+												>
+													<thead>
+														<tr>
+															<th scope="col">Qtde</th>
+															<th scope="col">Equipamento</th>
+															<th scope="col">Dimensões (mm)</th>
+														</tr>
+													</thead>
+													<tbody id="equip-ctrl">
+														<!-- javascript -->
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<h3 class="fotos">Fotos</h3>
+									<div class="row">
+										<div class="col-md-6 images">
+											<img
+												class="fotos fotos_ctrl"
+												src="../Images/ALadimtaq_011.jpg"
+												alt="Área controle de qualidade Injetaq"
+												title="Setor de medição - Área fabril - 1.050,00m2"
+											/>
+											<span class="texto-img"
+												>Setor de medição - Área fabril - 1.050,00m<sup
+													>2</sup
+												></span
+											>
+										</div>
+
+										<div class="col-md-6 images">
+											<img
+												class="fotos fotos_ctrl"
+												src="../Images/ALadimtaq_021.jpg"
+												alt="Cabeçote máquina tridimensional Injetaq"
+												title="Cabeçote modelo: RENISHAW PH10M"
+											/>
+											<span class="texto-img"
+												>Cabeçote modelo: RENISHAW PH10M</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- INJEÇÃO DE PLÁSTICOS -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="inje">
+								<button
+									class="accordion-button collapsed btn btn_a_injetaq"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#injecao-plasticos"
+									aria-expanded="false"
+									aria-controls="injecao-plasticos"
+									id="inj-equipamento"
+								>
+									INJEÇÃO DE PLÁSTICOS
+								</button>
+							</h2>
+							<div
+								id="injecao-plasticos"
+								class="accordion-collapse collapse"
+								aria-labelledby="inje"
+								data-bs-parent="#injetaq"
+							>
+								<div class="accordion-body">
+									<p class="texto-setores">
+										Injeção de plásticos a serviço das indústrias
+										automobilísticas, de eletrodomésticos e brinquedos, entre
+										outras.
+									</p>
+									<p class="texto-setores">
+										O setor de injeção de plásticos da Injetaq, conta com área
+										fabril de 500m<sup>2</sup>.
+									</p>
+
+									<div class="row row-prod-serv">
+										<div class="col-md-4">
+											<h5 class="texto-titulo">SERVIÇOS & PRODUTOS</h5>
+											<ul>
+												<li class="texto">
+													Executa peças técnicas para indústrias
+													automobilísticas
+												</li>
+												<li class="texto">Brinquedos e eletrodomésticos</li>
+												<li class="texto">
+													Capacidade de injetaq peças com até 350 gramas
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-8">
+											<h5 class="texto-titulo">ESTRUTURA E EQUIPAMENTOS</h5>
+											<ul>
+												<li class="texto">
+													A Injetaq dispõe de ampla estrutura e equipamentos que
+													garantem a entrega com qualidade e pontualidade
+												</li>
+											</ul>
+
+											<table
+												class="table table-striped table-hover table-injecao"
+											>
+												<thead>
+													<tr>
+														<th scope="col">Qtde</th>
+														<th scope="col">Equipamento</th>
+														<th scope="col">Capacidade (Ton/gr)</th>
+													</tr>
+												</thead>
+												<tbody id="equip-inj">
+													<!-- javascript -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<h3 class="fotos">Fotos</h3>
+									<div class="row">
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/AInjetaq_INJECAO_01.jpg"
+												alt="Fachada setor injeção de plásticos Injetaq"
+												title="Injeção de plásticos: Área fabril - 500m2."
+											/>
+											<span class="texto-img"
+												>Injeção de plásticos: Área fabril -
+												500m<sup>2</sup>.</span
+											>
+										</div>
+
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/AInjetaq_INJECAO_02.jpg"
+												alt="Área setor de injeção de plásticos Injetaq"
+												title="Área setor de injeção de plásticos"
+											/>
+											<span class="texto-img"
+												>Área da injeção de plásticos.</span
+											>
+										</div>
+
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/AInjetaq_INJECAO_03B.jpg"
+												alt="Produtos injetados Injetaq"
+												title="Produtos desenvolvidos pela área de injeção de plásticos."
+											/>
+											<span class="texto-img"
+												>Produtos desenvolvidos pela área de injeção de
+												plásticos.</span
+											>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/Maquina%20Eurostec140_130.jpg"
+												alt="Máquina injetora Injetaq"
+												title="Injetora Eurostec (BOLE) - 140/130"
+											/>
+											<span class="texto-img"
+												>Injetora Eurostec (BOLE) - 140/130</span
+											>
+										</div>
+
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/AInjetaq_INJECAO_04.jpg"
+												alt="Máquina injetora Injetaq"
+												title="Injetora Sinitron SYA 1300 DT"
+											/>
+											<span class="texto-img"
+												>Injetora Sinitron SYA 1300 DT</span
+											>
+										</div>
+
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/Maquina%20Eurostec100_320.jpg"
+												alt="Máquina injetora Injetaq"
+												title="Injetora Eurostec (BOLE) - 100/320"
+											/>
+											<span class="texto-img"
+												>Injetora Eurostec (BOLE) - 100/320</span
+											>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-4 images">
+											<img
+												class="fotos fotos_inj"
+												src="../Images/Maquina%20Eurostec70_160.jpg"
+												alt="Máquina injetora Injetaq"
+												title="Injetora Eurostec (BOLE) - 70/160"
+											/>
+											<span class="texto-img"
+												>Injetora Eurostec (BOLE) - 70/160</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer -->
+			<footer class="container">
+				<div class="row footer">
+					<div class="col-lg-7 rodape">
+						<p>
+							<a
+								class="f-documentos"
+								href="#"
+								data-bs-toggle="modal"
+								data-bs-target="#politica-privacidade-modal"
+								>Politica de privacidade</a
+							>
+						</p>
+						<p>
+							<a
+								class="f-documentos"
+								href="../documents/perfil_injetaq_portugues.pdf"
+								target="_blank"
+								>Perfil injetaq</a
+							>
+						</p>
+						<p>
+							<a
+								class="f-documentos"
+								href="../documents/certificado_iso.pdf"
+								target="_blank"
+								>Certificado NBR ISO 9001</a
+							>
+						</p>
+						<p>
+							<a
+								class="f-documentos"
+								href="https://docs.google.com/forms/d/e/1FAIpQLSdQrv59hjNt8KzEZtQkkX7tDJrcFunOr44SZzDbz66lPQNVJg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"
+								target="_blank"
+								>Registrar denuncia</a
+							>
+						</p>
+						<div class="dropdown language">
+							<button
+								class="btn btn-primary dropdown-toggle language"
+								type="button"
+								id="dropdownMenuButton2"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<img
+									src="../Images/globe2.svg"
+									class="globe"
+									alt="logo linguagem"
+									title="Linguagem"
+								/>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<li><a class="dropdown-item" href="./en_en.html">Inglês</a></li>
+								<li>
+									<a class="dropdown-item" href="./pt_br.html">Português</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="text-center">
+						Injetaq Industria e Comércio Ltda, &copy; 2021. Todos os direitos
+						reservados.
+					</p>
+				</div>
+			</footer>
+		</section>
+
+		<!-- clientes -->
+		<section class="container" id="clientes">
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="clientes-injetaq"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel1"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel1">
+								Clientes Injetaq
+							</h5>
+						</div>
+						<div class="modal-body">
+							<div class="three-col">
+								<div class="row">
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/01_FIAT.png"
+											alt="Logo FIAT"
+											title="FIAT"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/02_VW.png"
+											alt="Logo VW"
+											title="VOLKSWAGEN"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/03_Chevrolet.png"
+											alt="Logo GM"
+											title="GM"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/05_Honda.png"
+											alt="Logo HONDA"
+											title="HONDA"
+											class="fotos-clientes"
+										/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/06_Toyota.png"
+											alt="Logo TOYOTA"
+											title="TOYOTA"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/07_MercedesBenz.png"
+											alt="Logo MBB"
+											title="MERCEDES"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/08_Gestamp.png"
+											alt="Logo GESTAMP"
+											title="GESTAMP"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/09_Dana.png"
+											alt="Logo DANA"
+											title="MOVENT"
+											class="fotos-clientes"
+										/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/10_Nakata.png"
+											alt="Logo NAKATA"
+											title="NAKATA"
+											class="fotos-clientes"
+										/>
+									</div>
+									<div class="col-lg-3 fotos">
+										<img
+											src="../Images/18_Maxion.png"
+											alt="Logo MAXION"
+											title="MAXION"
+											class="fotos-clientes"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-bs-dismiss="modal"
+							>
+								OK
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- contato -->
+		<section class="container" id="contato">
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="contato-injetaq"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel2"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel2">Contato</h5>
+						</div>
+						<div class="modal-body contato-body">
+							<div class="row">
+								<div class="contato-dados">
+									<div class="col-lg-7">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2512233394286!2d-46.60121108447369!3d-23.66697227138723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44a3ccca600f%3A0xdb787b6b23ffa8b!2sInjetaq%20Ind%C3%BAstria%20Com%C3%A9rcio!5e0!3m2!1sen!2sbr!4v1639763002676!5m2!1sen!2sbr"
+											allowfullscreen=""
+											loading="lazy"
+										></iframe>
+										<a
+											id="localizacao"
+											href="https://goo.gl/maps/XauSZ2YqFuyrQaLJ6"
+											target="_blank"
+											>Localização Injetaq</a
+										>
+									</div>
+									<div class="col-lg-5 endereco">
+										<address>
+											<span>INJETAQ INDÚSTRIA E COMÉRCIO LTDA</span>
+											<span>Rua Capistrano de Abreu, 306 - Jd. Fraternal</span>
+											<span>Diadema - SP</span>
+											<span>CEP: 09940-470</span>
+											<span
+												>Tel:
+												<a href="tel:+551140705656">+55 11 4070-5656</a></span
+											>
+											<span
+												>Email:
+												<a href="mailto:destaq@injetaq.com.br"
+													>destaq@injetaq.com.br</a
+												></span
+											>
+										</address>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-bs-dismiss="modal"
+							>
+								OK
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

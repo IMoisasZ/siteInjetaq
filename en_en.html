@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- bootstrap internet
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+		<!-- bootstrap local -->
+		<link rel="stylesheet" href="../bootstrap//css/bootstrap.css" />
+		<script defer src="../bootstrap//js/bootstrap.bundle.min.js"></script>
 
-    <!-- bootstrap local -->
-    <link rel="stylesheet" href="../bootstrap//css/bootstrap.css">
-    <!-- <script src="../bootstrap//js/bootstrap.js"></script> -->
-    <script defer src="../bootstrap//js/bootstrap.bundle.min.js"></script>
+		<!-- icone do grupo taq no tilte -->
+		<link rel="shortcut icon" href="../Images/iconeGrupoTaq.ico" />
+		<title>Injetaq</title>
 
-    <!-- icone do grupo taq no title -->
-    <link rel="shortcut icon" href="../Images/iconeGrupoTaq.ico">
-    <title>Injetaq</title>
+		<!-- css -->
+		<link href="../CSS/styles.css" rel="stylesheet" />
 
-    <!-- css -->
-    <link href="../CSS/styles.css" rel="stylesheet">
+		<!-- javascript -->
+		<script
+			defer
+			src="../JavaScript/modelacao/equipamentos.modelacao.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/ferramentaria/equipamentos.ferramentaria.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/controleDimensional/equipamentos.controleDimensional.js"
+		></script>
+		<script
+			defer
+			src="../JavaScript/injecaoPlasticos/equipamentos.injecaoPlasticos.js"
+		></script>
 
-    <style>.cookieConsentContainer{z-index:999;width:350px;min-height:20px;box-sizing:border-box;padding:30px 30px 30px 30px;background:#232323;overflow:hidden;position:fixed;bottom:30px;right:30px;display:none}.cookieConsentContainer .cookieTitle a{font-family:OpenSans,arial,sans-serif;color:#fff;font-size:22px;line-height:20px;display:block}.cookieConsentContainer .cookieDesc p{margin:0;padding:0;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:13px;line-height:20px;display:block;margin-top:10px}.cookieConsentContainer .cookieDesc a{font-family:OpenSans,arial,sans-serif;color:#fff;text-decoration:underline}.cookieConsentContainer .cookieButton a{display:inline-block;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:14px;font-weight:700;margin-top:14px;background:#000;box-sizing:border-box;padding:15px 24px;text-align:center;transition:background .3s}.cookieConsentContainer .cookieButton a:hover{cursor:pointer;background:#3e9b67}@media (max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}</style>
+		<!-- cookies -->
+		<script defer src="../JavaScript/cookies.js"></script>
   </head>
   <body>
-    <!-- <a href="#home"><i class="bi bi-arrow-up-circle-fill" id="subir" title="Top of page"></i></a> -->
     <a href='#home'><img src="../Images/arrow-up-circle-fill.svg" alt="Logo top of page" id="subir" title="Top of page"></a>
     <!-- cabeçalho -->
     <header class="container" id="home">
@@ -41,9 +53,6 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#sobre">About</a>
-                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="#a-injetaq">Injetaq</a>
                   </li>
@@ -108,12 +117,20 @@
           <p class="text-compliance mt-0" title="Click to download the code of conduct.">Clique <a href="../documents/MCCDI 01 - Destaq_Injetaq Code of Conduct Manual_En.pdf" target="_blank"> here</a> to download the code of conduct.</p> 
           <div class="row">
             <div class="col-md-1 btn_complaince">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcRC_0GBfS4D5ZQzic4u3_yRd1VQtrt6AgaRcjZmc2WC-oAw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link" target="_blank">Register complaint</button></a>
-            </div>
+							<form
+								action="https://docs.google.com/forms/d/e/1FAIpQLSfcRC_0GBfS4D5ZQzic4u3_yRd1VQtrt6AgaRcjZmc2WC-oAw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"
+								method="get"
+								target="_blank"
+							>
+								<button class="btn btn-primary mb-2" id="btn-denuncia">
+									Register complaint
+								</button>
+							</form>
+						</div>
             <div class="col-md-3">
-            <!-- Button trigger politica de privacidade -->
-            <div id="link-politica-privacidade">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#politica-privacidade-modal">Privacy Policy</a>
+              <div id="link-politica-privacidade">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#politica-privacidade-modal">Privacy Policy</a>
+              </div>
             </div>
             <!-- Modal -->
             <div class="modal fade" id="politica-privacidade-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -219,30 +236,28 @@
                     </div>
                   </div>
                   <h3 class="fotos">Photos</h3>
-                  <div class="row">
-                    <div class="col-lg-4 images">
+                  <div class="images_geral">
+                    <div class="images">
                       <img class="fotos fotos_proj" src="../Images/ADestaq_00.jpg" alt="Administration building and Injetaq project" title="Administration and project building: 1.400m2">
                       <span class="texto-img">Administration and project building: 1.400m<sup>2</sup></span>
                     </div>
                       
-                    <div class="col-lg-4 images">
+                    <div class="images">
                       <img class="fotos fotos_proj" src="../Images/ADestaq_01.jpg" alt="Injetaq administration area" title="Administration area">
                       <span class="texto-img">Administration area</span>
                     </div>
                     
-                    <div class="col-lg-4 images">
+                    <div class="images">
                       <img class="fotos fotos_proj" src="../Images/ADestaq_03.jpg" alt="Injetaq tool design" title="Tool design">
                       <span class="texto-img">Tool design</span>                
                     </div>             
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-lg-4 images">
+
+                    <div class="images">
                       <img class="fotos fotos_proj" src="../Images/ADestaq_06_MAQUINAS_ESPECIAIS.jpg" alt="Injetaq special machine design" title="Special machine design">
                       <span class="texto-img">Special machine design</span>
                     </div>
   
-                    <div class="col-lg-4 images">
+                    <div class="images">
                       <img class="fotos fotos_proj" src="../Images/maq_mod_011.png" alt="Injetaq special machine design" title="Special machine design">
                       <span class="texto-img">Special machine design</span>
                     </div>
@@ -287,18 +302,18 @@
                     </div>             
                   </div>
                     <h3 class="fotos">Photos</h3>
-                    <div class="row">
-                      <div class="col-lg-4 images">
+                    <div class="images_geral">
+                      <div class="images">
                         <img class="fotos fotos_mod" src="../Images/AInjetaq_MODELACAO_01.jpg" alt="Injetaq modeling area" title="Modeling: Manufacturing Area - 1,000m">
                         <span class="texto-img">Modeling: Manufacturing area - 1.000m<sup>2</sup></span>
                       </div> 
   
-                      <div class="col-lg-4 images">
+                      <div class="images">
                         <img class="fotos fotos_mod" src="../Images/AInjetaq_MODELACAO_04.jpg" alt="CNC molding machines Injetaq" title="CNC machining machine - X = 2.50m Y = 5.10m Z = 1.10m">
                         <span class="texto-img">CNC machining machine - X = 2.50m Y = 5.10m Z = 1.10m</span>
                       </div>
                       
-                      <div class="col-lg-4 images">
+                      <div class="images">
                         <img class="fotos fotos_mod" src="../Images/Maquina_Modelacao31.png" alt="CNC molding machine Injetaq" title="CNC machining machine X = 2.50m Y = 5.10m Z = 1.10m">
                         <span class="texto-img">CNC machining machine X = 2.50m Y = 5.10m Z = 1.10m</span>
                       </div>
@@ -354,85 +369,77 @@
                         </div>
                       </div>
                       <h3 class="fotos">Photos</h3>
-                      <div class="row">
-                        <div class="col-lg-4 images">            
+                      <div class="images_geral">
+                        <div class="images">            
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_02.jpg" alt="Injetaq Tooling area" title="Tooling area: Manufacturing area - 4.000m2">
                           <span class="texto-img">Tooling area: Manufacturing area - 4.000m<sup>2</sup></span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_10.jpg" alt="Injetaq tooling area" title="Tooling area">
                           <span class="texto-img">Tooling area</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/Copiadora%20W635%20%E2%80%93%20HARTFORD.png" alt="CNC Machine tooling Injetaq" title="Machining machine CNC W635 – HARTFORD">
                           <span class="texto-img">Machining machine CNC W635 – HARTFORD</span>
                         </div>
-                      </div>
   
-                      <div class="row">
-                        <div class="col-lg-4 images">          
+                        <div class="images">          
                           <img class="fotos fotos_ferr" src="../Images/Copiadora%20HSA323EA%20%E2%80%93%20HARTFORD.png" alt="CNC Machine tooling Injetaq" title="Machining machine CNC HSA323EA – HARTFORD">
                           <span class="texto-img">Machining machine CNC HSA323EA – HARTFORD</span>
                         </div>
   
-                        <div class="col-lg-4 images">            
+                        <div class="images">            
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_05.jpg" alt="CNC Machine tooling Injetaq" title="Machining machine CNC ZAYER KF 3000">
                           <span class="texto-img">Machining machine CNC ZAYER KF 3000</span>
                         </div>
                         
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_09.jpg" alt="Injetaq Tooling mills" title="Milling cutters">
                           <span class="texto-img">Milling cutters</span>
                         </div>
-                      </div>
-  
-                      <div class="row">
-                        <div class="col-lg-4 images">
+
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_11.jpg" alt="Hydraulic presses: Innocentini Blanch (1250 / 750 TON) / Muller (630 TON)" title="Hydraulic presses: Innocentini Blanch (1250 / 750 TON) / Muller (630 TON)">
-                          <span class="texto-img" style="width: 90%;">Hydraulic presses: Innocentini Blanch (1250 / 750 TON) / Muller (630 TON)<br /></span> 
+                          <span class="texto-img">Hydraulic presses: Innocentini Blanch <br /> (1250 / 750 TON) / Muller (630 TON)</span> 
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_18_MAQUINAS_ESPECIAIS.jpg" alt="Special machines Injetaq" title="Construction of special machines">
                           <span class="texto-img">Construction of special machines</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/maq_hartford_011.png" alt="Machining machine CNC PRO-2150 – HARTFORD" title="Machining machine CNCCNC PRO-2150 – HARTFORD">
                           <span class="texto-img">Machining machine CNC PRO-2150 – HARTFORD</span>
                         </div>    
-                      </div>
-                      
-                      <div class="row">
-                        <div class="col-lg-4 images">
+
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_06.jpg" alt="Machining machine CNC ZAYER KF 3000" title="Machining machine CNC ZAYER KF 3000">
                           <span class="texto-img">Machining machine CNC ZAYER KF 3000</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_08.jpg" alt="Lathe Injetaq" title="Lathe">
                           <span class="texto-img">Lathe</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_11B.jpg" alt="Hydraulic presses JONASA (500 TON)" title="Hydraulic presses JONASA (500 TON)">
                           <span class="texto-img">Prensas hidráulicas JONASA (500 TON)</span>	
                         </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="col-lg-4 images">
+
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_13.jpg" alt="Machining machine CNCCNC LX 3220 – Leaderway" title="Machining machine CNC LX 3220 – Leaderway">
                           <span class="texto-img">Machining machine CNC LX 3220 – Leaderway</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_07.jpg" alt="Machining machine CNC FADAL Mod. 4020 e 4025" title="Machining machine CNC FADAL Mod. 4020 e 4025">
                           <span class="texto-img"> Machining machine CNC FADAL Mod. 4020 e 4025</span>
                         </div>
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/maq_mandrilhadora_011.png" alt="Boring machine – HBN-110 (Turning table)" title="Boring machine – HBN-110 (Turning table)">
                           <span class="texto-img">Boring machine – HBN-110 (Turning Table)</span>	
                         </div>
                       </div>
                       
                       <div class="row">
-                        <div class="col-lg-4 images">
+                        <div class="images">
                           <img class="fotos fotos_ferr" src="../Images/AInjetaq_FERRAMENTA_17_MAQUINAS_ESPECIAIS.jpg" alt="Special machines" title="Construction of special machines">
                           <span class="texto-img">Construction of special machines</span>
                         </div>
@@ -486,12 +493,12 @@
                     </div>              
                   </div>
                   <h3 class="fotos">Photos</h3>
-                  <div class="row">
-                    <div class="col-md-6 images">
+                  <div class="images_geral">
+                    <div class="images">
                         <img class="fotos fotos_ctrl" src="../Images/ALadimtaq_011.jpg" alt="Injetaq quality control area" title="Measurement sector - Manufacturing area - 1.050.00 m2">
                         <span class="texto-img">Measurement sector - Manufacturing area - 1.050.00<sup>2</sup></span>
                     </div>
-                    <div class="col-md-6 images">
+                    <div class="images">
                         <img class="fotos fotos_ctrl" src="../Images/ALadimtaq_021.jpg" alt="Three-dimensional Injetaq machine head" title="Model head: RENISHAW PH10M">
                         <span class="texto-img">Model head: RENISHAW PH10M</span>
                     </div>
@@ -541,43 +548,38 @@
                     </div>
                   </div>
                   <h3 class="fotos">Photos</h3>
-                  <div class="row">
-                    <div class="col-md-4 images">
+                  <div class="images_geral">
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/AInjetaq_INJECAO_01.jpg" alt="Injetaq plastic injection sector facade" title="Plastics Injection: Manufacturing area - 500m2."/>
                       <span class="texto-img">Plastics injection: Manufacturing area - 500m<sup>2</sup>.</span>
                     </div>
   
-                    <div class="col-md-4 images">
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/AInjetaq_INJECAO_02.jpg" alt="Injetaq plastics injection sector area" title="Plastic injection sector area"/>
                       <span class="texto-img">Plastics injection area.</span>
                     </div>
   
-                    <div class="col-md-4 images">
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/AInjetaq_INJECAO_03B.jpg" alt="Injetaq injected products" title="Products developed by the Plastics Injection area."/>
                       <span class="texto-img">Products developed by the plastics injection area.</span>
                     </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-md-4 images">
+
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/Maquina%20Eurostec140_130.jpg" alt="Injetaq injection machine" title="Eurostec injection molding machine (BOLE) - 140/130"/>
                       <span class="texto-img">Eurostec injection molding machine (BOLE) - 140/130</span>
                     </div>
                     
-                    <div class="col-md-4 images">
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/AInjetaq_INJECAO_04.jpg" alt="Injetaq injection machine" title="Sinitron SYA 1300 DT Injector" />
                       <span class="texto-img">Sinitron SYA 1300 DT injector</span>	
                     </div>
 
-                    <div class="col-md-4 images">
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/Maquina%20Eurostec100_320.jpg" alt="Injetaq injection machine" title="Eurostec injection molding machine (BOLE) - 100/320"/>
                       <span class="texto-img">Eurostec injection molding machine (BOLE) - 100/320</span>
                     </div>
-                  </div>
-  
-                  <div class="row">
-  
-                    <div class="col-md-4 images">
+
+                    <div class="images">
                       <img class="fotos fotos_inj" src="../Images/Maquina%20Eurostec70_160.jpg" alt="Injetaq injection machine" title="Eurostec injection molding machine (BOLE) - 70/160" />
                       <span class="texto-img">Eurostec injection molding machine (BOLE) - 70/160</span>
                     </div>
@@ -685,22 +687,20 @@
               <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
             </div>
             <div class="modal-body contato-body">
-              <div class="row">
-                <div class="contato-dados">
-                  <div class="col-lg-7">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2512233394286!2d-46.60121108447369!3d-23.66697227138723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44a3ccca600f%3A0xdb787b6b23ffa8b!2sInjetaq%20Ind%C3%BAstria%20Com%C3%A9rcio!5e0!3m2!1sen!2sbr!4v1639763002676!5m2!1sen!2sbr" allowfullscreen="" loading="lazy"></iframe>
-                    <a id="localizacao" href="https://goo.gl/maps/XauSZ2YqFuyrQaLJ6" target="_blank">Injetaq location</a>
-                  </div>
-                  <div class="col-lg-5 endereco">
-                    <address>
-                      <span>INJETAQ INDÚSTRIA E COMÉRCIO LTDA</span>
-                      <span>Street Capistrano de Abreu, 306 - Jd. Fraternal</span>
-                      <span>Diadema - SP - Brazil</span>
-                      <span>CEP: 09940-470</span>
-                      <span>Phone number: <a href="tel:+551140705656">+55 11 4070-5656</a></span>
-                      <span>E-mail: <a href="mailto:destaq@injetaq.com.br">destaq@injetaq.com.br</a></span>
-                    </address>
-                  </div>
+              <div class="contato-dados">
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2512233394286!2d-46.60121108447369!3d-23.66697227138723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44a3ccca600f%3A0xdb787b6b23ffa8b!2sInjetaq%20Ind%C3%BAstria%20Com%C3%A9rcio!5e0!3m2!1sen!2sbr!4v1639763002676!5m2!1sen!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                  <a id="localizacao" href="https://goo.gl/maps/XauSZ2YqFuyrQaLJ6" target="_blank">Injetaq location</a>
+                </div>
+                <div class="endereco">
+                  <address>
+                    <span>INJETAQ INDÚSTRIA E COMÉRCIO LTDA</span>
+                    <span>Street Capistrano de Abreu, 306 - Jd. Fraternal</span>
+                    <span>Diadema - SP - Brazil</span>
+                    <span>CEP: 09940-470</span>
+                    <span>Phone number: <a href="tel:+551140705656">+55 11 4070-5656</a></span>
+                    <span>E-mail: <a href="mailto:destaq@injetaq.com.br">destaq@injetaq.com.br</a></span>
+                  </address>
                 </div>
               </div>
             </div>

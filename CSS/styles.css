@@ -114,6 +114,10 @@ hr {
 }
 
 /* a injetaq */
+.mark_btn {
+	text-decoration: none;
+}
+
 .accordion-button {
 	font-weight: 700;
 	transition: 1.5s;

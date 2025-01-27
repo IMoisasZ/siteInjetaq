@@ -1,3 +1,5 @@
+/** @format */
+
 const ferramentaria = [
 	{
 		id: 1,
@@ -50,71 +52,65 @@ const ferramentaria = [
 	{
 		id: 8,
 		quantity: 1,
-		equipment: 'Machining Machine CNC ATM-TAQ',
-		dimensionCapacity: '2500 x 5000 x 1100',
-	},
-	{
-		id: 9,
-		quantity: 1,
 		equipment: 'Tool Presetter - EZSet-IC1',
 		dimensionCapacity: '--',
 	},
 	{
-		id: 10,
+		id: 9,
 		quantity: 1,
 		equipment: 'Boring Machine – HBN-110 (Turning Table)',
 		dimensionCapacity: '1600 x 1000 x 1250',
 	},
 	{
-		id: 11,
+		id: 10,
 		quantity: 3,
 		equipment: 'Milling machines',
 		dimensionCapacity: '--',
 	},
 	{
-		id: 12,
+		id: 11,
 		quantity: 2,
 		equipment: 'Mechanical Lathes',
 		dimensionCapacity: 'Ø440 x 1500',
 	},
 	{
-		id: 13,
+		id: 12,
 		quantity: 1,
 		equipment: 'Flat grinder Mello',
 		dimensionCapacity: '550 x 250 x 250',
 	},
 	{
-		id: 14,
+		id: 13,
 		quantity: 6,
 		equipment: 'Radial column drills',
 		dimensionCapacity: 'Table (900 x 1500)',
 	},
 	{
-		id: 15,
+		id: 14,
 		quantity: 1,
 		equipment: 'Overhead crane',
 		dimensionCapacity: '15 TON + 7TON (Hook Aux.)',
 	},
 	{
-		id: 16,
+		id: 15,
 		quantity: 3,
 		equipment: 'Overhead crane',
 		dimensionCapacity: '20 TON + 7 TON (Hook Aux.)',
 	},
 	{
-		id: 17,
+		id: 16,
 		quantity: 2,
 		equipment: 'Hydraulic press - JONASA',
 		dimensionCapacity: 'Table 2000 x 3000 / 500 TON',
 	},
 	{
-		id: 18,
+		id: 17,
 		quantity: 1,
 		equipment: 'Hydraulic press - MULLER',
 		dimensionCapacity: 'Table 2000 x 2500 / 630 TON',
 	},
 	{
-		id: 19,
+		id: 18,
 		quantity: 1,
 		equipment: 'hydraulic press Double acting - INNOCENTINI BLANCH',
 		dimensionCapacity: 'Table 2285 x 3505 / 1250-750 TON',

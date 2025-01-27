@@ -1,3 +1,5 @@
+/** @format */
+
 const ferramentaria = [
 	{
 		id: 1,
@@ -56,60 +58,54 @@ const ferramentaria = [
 	{
 		id: 9,
 		qtde: 1,
-		equipamento: 'Copiadora CNC ATM-TAQ',
-		dimensaoCapacidade: '2500 x 5000 x 1100',
-	},
-	{
-		id: 10,
-		qtde: 1,
 		equipamento: 'Mandrilhadora – HBN-110 (Mesa Giratoria)',
 		dimensaoCapacidade: '1600 x 1000 x 1250',
 	},
-	{ id: 11, qtde: 3, equipamento: 'Fresadoras', dimensaoCapacidade: '--' },
+	{ id: 10, qtde: 3, equipamento: 'Fresadoras', dimensaoCapacidade: '--' },
 	{
-		id: 12,
+		id: 11,
 		qtde: 2,
 		equipamento: 'Tornos Mecânicos',
 		dimensaoCapacidade: 'Ø440 x 1500',
 	},
 	{
-		id: 13,
+		id: 12,
 		qtde: 1,
 		equipamento: 'Retífica plana Mello',
 		dimensaoCapacidade: '550 x 250 x 250',
 	},
 	{
-		id: 14,
+		id: 13,
 		qtde: 6,
 		equipamento: 'Furadeiras coluna Radial',
 		dimensaoCapacidade: 'Mesa (900 x 1500)',
 	},
 	{
-		id: 15,
+		id: 14,
 		qtde: 1,
 		equipamento: 'Ponte rolante',
 		dimensaoCapacidade: '15 TON + 7TON (Gancho Aux.)',
 	},
 	{
-		id: 16,
+		id: 15,
 		qtde: 3,
 		equipamento: 'Ponte rolante',
 		dimensaoCapacidade: '20 TON + 7 TON (Gancho Aux.)',
 	},
 	{
-		id: 17,
+		id: 16,
 		qtde: 2,
 		equipamento: 'Prensa hidráulica JONASA',
 		dimensaoCapacidade: 'Mesa 2000 x 3000 / 500 TON',
 	},
 	{
-		id: 18,
+		id: 17,
 		qtde: 1,
 		equipamento: 'Prensa hidráulica MULLER',
 		dimensaoCapacidade: 'Mesa 2000 x 2500 / 630 TON',
 	},
 	{
-		id: 19,
+		id: 18,
 		qtde: 1,
 		equipamento: 'Prensa hidráulica dupla ação - INNOCENTINI BLANCH',
 		dimensaoCapacidade: 'Mesa 2285 x 3505 / 1250-750 TON',

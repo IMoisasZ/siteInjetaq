@@ -205,14 +205,15 @@
 }
 
 .fotos-setores {
-	filter: grayscale(1);
+	/* filter: grayscale(1); */
 	width: 100%;
 	transition: 1s;
 }
 
 .fotos-setores:hover {
-	filter: grayscale(0);
+	/* filter: grayscale(0); */
 	border-radius: 0.5rem;
+	scale: 1.05;
 }
 
 .texto-img {
